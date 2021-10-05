@@ -1,0 +1,11 @@
+:root {
+  --main-color: #e83ed0;
+  --dark-white: #ffffffcc;
+  --gray: #666666;
+  --ligth-gray: #cccccc;
+}
+
+/* //font-family */
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
