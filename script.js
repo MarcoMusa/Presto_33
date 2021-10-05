@@ -12,9 +12,9 @@ const navbar = document.querySelector('.up-navbar')
 
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 500) {
-        navbar.classList.add('bg-white', 'shadow')
+        navbar.classList.add('bg-main', 'shadow')
     } else {
-        navbar.classList.remove('bg-white', 'shadow')
+        navbar.classList.remove('bg-main', 'shadow')
     }
 })
 

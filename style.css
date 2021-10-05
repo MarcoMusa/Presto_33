@@ -12,8 +12,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-html,
-body .text-main {
+.text-main {
   color: var(--main-color);
 }
 
@@ -23,6 +22,10 @@ body .text-main {
 
 .text-light {
   color: var(--ligth-gray);
+}
+
+.bg-main {
+  background-color: var(--ligth-gray) !important;
 }
 
 .subtitle {
@@ -87,7 +90,8 @@ body .text-main {
 }
 
 .up-navbar .navbar-brand {
-  color: black;
+  color: var(--gray);
+  font-size: 30px;
   font-weight: 700;
   transition: var(--transition);
 }
@@ -98,7 +102,8 @@ body .text-main {
 }
 
 .up-navbar .nav-link {
-  color: black;
+  color: var(--gray);
+  font-size: 20px;
   transition: var(--transition);
 }
 
