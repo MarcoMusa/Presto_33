@@ -4,6 +4,7 @@
   --gray: #666666;
   --ligth-gray: #cccccc;
   --transition: 0.3s;
+  --transition-slow: 0.6s;
 }
 
 /* //font-family */
@@ -11,8 +12,21 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+.text-main {
+  color: var(--main-color);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-light {
+  color: var(--ligth-gray);
+}
+
 .up-navbar {
   background-color: transparent;
+  transition: var(--transition-slow);
 }
 
 .up-navbar .navbar-brand {
@@ -39,4 +53,54 @@
 
 .up-navbar .nav-link:hover {
   color: var(--main-color);
+}
+
+.masthead {
+  background: linear-gradient(#0000006c, #0000006c),
+    url("./media/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+.search-bar {
+  background-color: white;
+  height: 70px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.search-bar .search-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+  border: none;
+  padding-left: 35px;
+}
+
+.search-bar .search-input:focus {
+  border: none;
+  outline: none !important;
+}
+
+.search-bar .btn-search {
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 35px 35px 35px;
+}
+
+#containBall {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: var(--main-color);
+  border-radius: 35px;
+  bottom: -10px;
+  left: calc(50% - 35px);
 }

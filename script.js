@@ -11,6 +11,10 @@ navbarToggler.addEventListener('click', () => {
 const navbar = document.querySelector('.up-navbar')
 
 window.addEventListener('scroll', () => {
-
+    if (window.pageYOffset > 500) {
+        navbar.classList.add('bg-white', 'shadow')
+    } else {
+        navbar.classList.remove('bg-white', 'shadow')
+    }
 })
 
