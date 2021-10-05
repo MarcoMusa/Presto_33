@@ -12,7 +12,8 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-.text-main {
+html,
+body .text-main {
   color: var(--main-color);
 }
 
@@ -22,6 +23,62 @@
 
 .text-light {
   color: var(--ligth-gray);
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+.subtitle::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-color);
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.subtitle::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-color);
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.bottom-cover {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.bottom-cover::after {
+  content: "";
+  background-color: white;
+  height: 70px;
+  bottom: -40px;
+  left: -20px;
+  width: calc(50% + 20px);
+  position: absolute;
+  transform: skewY(4deg);
+}
+
+.bottom-cover::before {
+  content: "";
+  background-color: white;
+  height: 90px;
+  bottom: -40px;
+  right: -20px;
+  width: calc(50% + 20px);
+  position: absolute;
+  transform: skewY(-4deg);
 }
 
 .up-navbar {
@@ -103,4 +160,20 @@
   border-radius: 35px;
   bottom: -10px;
   left: calc(50% - 35px);
+}
+
+/* Animazione pallina con freccia */
+.upDown {
+  position: relative;
+  animation: upDown 1.5s linear infinite;
+}
+@keyframes upDown {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+  }
 }
