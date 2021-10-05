@@ -73,7 +73,7 @@ body .text-main {
 .bottom-cover::before {
   content: "";
   background-color: white;
-  height: 90px;
+  height: 70px;
   bottom: -40px;
   right: -20px;
   width: calc(50% + 20px);
@@ -176,4 +176,12 @@ body .text-main {
     opacity: 1;
     top: 10px;
   }
+}
+
+.ad-card .ad-details {
+  width: 90%;
+  padding: 20px 40px;
+  position: relative;
+  top: -40px;
+  background-color: white;
 }
