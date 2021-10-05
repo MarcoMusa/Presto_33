@@ -3,9 +3,40 @@
   --dark-white: #ffffffcc;
   --gray: #666666;
   --ligth-gray: #cccccc;
+  --transition: 0.3s;
 }
 
 /* //font-family */
 * {
   font-family: "Nunito Sans", sans-serif;
+}
+
+.up-navbar {
+  background-color: transparent;
+}
+
+.up-navbar .navbar-brand {
+  color: black;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.up-navbar .navbar-brand:hover {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.up-navbar .nav-link {
+  color: black;
+  transition: var(--transition);
+}
+
+.up-navbar .nav-link.active {
+  color: var(--main-color);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.up-navbar .nav-link:hover {
+  color: var(--main-color);
 }
