@@ -3,7 +3,7 @@ const navbarToggler = document.querySelector('#navbar-toggler')
 const navbarTogglerIcon = document.querySelector('#navbarToggler .fa-solid .fa-ellipsis-vertical')
 
 navbarToggler.addEventListener('click', () => {
-    navbarToggler.classList.toggle('fa-rotate-90')
+  navbarToggler.classList.toggle('fa-rotate-90')
 })
 
 
@@ -11,10 +11,14 @@ navbarToggler.addEventListener('click', () => {
 const navbar = document.querySelector('.up-navbar')
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
-        navbar.classList.add('bg-main', 'shadow')
-    } else {
-        navbar.classList.remove('bg-main', 'shadow')
-    }
+  if (window.pageYOffset > 700) {
+    navbar.classList.add('shadow')
+  } else {
+    navbar.classList.remove('shadow')
+  }
 })
+
+
+
+
 

@@ -26,6 +26,7 @@
 
 .bg-main {
   background-color: var(--ligth-gray) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .subtitle {
@@ -87,6 +88,7 @@
 .up-navbar {
   background-color: transparent;
   transition: var(--transition-slow);
+  backdrop-filter: blur(7px);
 }
 
 .up-navbar .navbar-brand {
