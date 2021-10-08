@@ -291,11 +291,22 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- impostazioni carosello Glide -->
     <script>
       new Glide(".glide", {
         type: "carousel",
+        focusAt: "center",
+        autopaly: 2000,
         gap: 60,
-        perView: 3,
+        perView: 4,
+        breakpoints: {
+          1024: {
+            perView: 2,
+          },
+          600: {
+            perView: 1,
+          },
+        },
       }).mount();
     </script>
 
