@@ -30,6 +30,22 @@
       crossorigin="anonymous"
     />
 
+    <!-- Glide js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./style.css" />
 
     <title>Progetto Presto 33</title>
@@ -136,7 +152,76 @@
             Visualizza gli ultimi annunci
           </h2>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 my-5">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="ad-card">
+                    <img
+                      class="img-fluid"
+                      src="https:/picsum.photos/600/300"
+                      alt=""
+                    />
+                    <div class="ad-details shadow-sm mx-auto">
+                      <p class="lead fw-bold text-gray">3000 $</p>
+                      <h2 class="fs-5 text-gray">Titolo annuncio</h2>
+                      <p class="text-gray">Categoria: moto</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="ad-card">
+                    <img
+                      class="img-fluid"
+                      src="https:/picsum.photos/600/300"
+                      alt=""
+                    />
+                    <div class="ad-details shadow-sm mx-auto">
+                      <p class="lead fw-bold text-gray">3000 $</p>
+                      <h2 class="fs-5 text-gray">Titolo annuncio</h2>
+                      <p class="text-gray">Categoria: moto</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="ad-card">
+                    <img
+                      class="img-fluid"
+                      src="https:/picsum.photos/600/300"
+                      alt=""
+                    />
+                    <div class="ad-details shadow-sm mx-auto">
+                      <p class="lead fw-bold text-gray">3000 $</p>
+                      <h2 class="fs-5 text-gray">Titolo annuncio</h2>
+                      <p class="text-gray">Categoria: moto</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="shadow text-main glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                <i class="fas fa-arrow-circle-left"></i>
+              </button>
+              <button
+                class="shadow text-main glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-12 col-sm-6 col-lg-3">
           <div class="ad-card">
             <img class="img-fluid" src="https:/picsum.photos/600/300" alt="" />
             <div class="ad-details shadow-sm mx-auto">
@@ -175,7 +260,7 @@
               <p class="text-gray">Categoria: moto</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -187,6 +272,22 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Glide js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+      integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new Glide(".glide", {
+        type: "carousel",
+        gap: 60,
+        perView: 3,
+      }).mount();
+    </script>
 
     <script src="./script.js"></script>
   </body>

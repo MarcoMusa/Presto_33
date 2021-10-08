@@ -1,5 +1,6 @@
 :root {
   --main-color: #e83ed0;
+  --main-trasp: #e83ed1a6;
   --dark-white: #ffffffcc;
   --gray: #666666;
   --ligth-gray: #cccccc;
@@ -191,4 +192,24 @@
   position: relative;
   top: -40px;
   background-color: white;
+}
+
+.glide__arrow--left {
+  left: -3em;
+  background-color: var(--main-trasp);
+  color: var(--gray);
+}
+
+.glide__arrow--right {
+  right: -3em;
+  background-color: var(--main-trasp);
+  color: var(--gray);
+}
+
+.glide__bullet {
+  background-color: var(--main-trasp);
+}
+
+.glide__bullet--active {
+  background-color: var(--gray);
 }
